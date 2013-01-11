@@ -19,4 +19,9 @@ class Twitter < DynamicContent
     return contents
   end
 
+  # Twitter accepts a username
+  def self.form_attributes
+    attributes = super()
+    attributes.concat([:config => [:username]])
+  end
 end
