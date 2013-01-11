@@ -1,0 +1,11 @@
+<fieldset>
+  <legend><span>Upload Twitter</span></legend>
+  <div class="clearfix">
+    <label>Twitter Username</label>
+    <%= form.fields_for :config do |config| %>
+    <div class="input">
+      <%= config.text_area 'username' %>
+    </div>
+    <% end %>
+  </div>
+</fieldset>
